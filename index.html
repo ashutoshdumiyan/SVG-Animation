@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog SVG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>SVG Animated Dog</h1>
+    <div class="container">
+        <div class="control">
+            <button class="color" type="button" data-add="color-add">Change Color</button>
+            <button class="color" type="button" data-remove="color-add">Reset Color</button>
+            <button class="color" type="button" data-add="move-eyes">Move Eyes</button>
+            <button class="color" type="button" data-remove="move-eyes">Don't Move Eyes</button>
+            <button class="color" type="button" data-add="move-ears">Move Ears</button>
+            <button class="color" type="button" data-remove="move-ears">Don't Move Ears</button>
+        </div>
+
+        <svg class="dog" width="572" height="543" viewBox="0 0 572 543" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Desktop">
+                <path id="face"
+                    d="M151 314.895C151 314.895 167.101 220.572 213.577 191.622C262.109 161.391 319.417 156.293 361.135 191.622C402.853 226.95 415.987 314.895 415.987 314.895C415.987 314.895 418.305 404.728 361.135 428.398C303.966 452.067 276.154 448.946 213.577 428.398C151 407.849 151 314.895 151 314.895Z"
+                    fill="#F4F4F4" stroke="#F4F4F4" stroke-width="3" />
+                <path id="nose"
+                    d="M318.262 348.383C323.762 322.883 240.762 324.883 246.262 348.383C251.762 371.883 261.762 377.883 281.762 377.883C301.762 377.883 312.762 373.883 318.262 348.383Z"
+                    fill="black" stroke="black" />
+                <path id="mouth"
+                    d="M217 369C217 369 230 407.5 253 405C276 402.5 283.5 369 283.5 369C283.5 369 292 405 316.5 405C341 405 348 369 348 369"
+                    stroke="black" stroke-width="1" />
+                <path id="left-ear"
+                    d="M175.7 242.051C151.7 281.051 78.708 138.186 129.7 105.551C179.7 73.551 271.2 168.551 238.7 180.551C206.2 192.551 199.7 203.051 175.7 242.051Z"
+                    fill="#CE8E2E" stroke="black" stroke-width="1" />
+                <path id="left-inner-ear"
+                    d="M173.368 221.952C156.652 251.383 105.811 143.571 141.329 118.944C176.154 94.7952 239.886 166.486 217.249 175.542C194.612 184.597 190.085 192.521 173.368 221.952Z"
+                    fill="#F4F4F4" stroke="black" stroke-width="0" />
+                <path id="right-ear"
+                    d="M340.324 178.054C304.198 149.914 454.221 93.0742 481.053 147.342C507.363 200.553 402.88 281.049 394.526 247.429C386.171 213.809 376.449 206.194 340.324 178.054Z"
+                    fill="#CE8E2E" stroke="black" stroke-width="1" />
+                <path id="right-inner-ear"
+                    d="M367.229 180.999C341.632 160.824 448.103 119.851 467.082 158.801C485.691 196.992 411.499 254.911 405.606 230.772C399.713 206.634 392.825 201.174 367.229 180.999Z"
+                    fill="#F4F4F4" stroke="black" stroke-width="0" />
+                <g id="Vector">
+                    <path
+                        d="M152 307.5V335C152 335 252.5 326 271.5 307.5C290.5 289 271.5 167.5 271.5 167.5L242.5 177.5L210 193L179 230.5L162 266.5L152 307.5Z"
+                        fill="#CE8E2E" />
+                    <path
+                        d="M336.5 177.5L300.5 167.5C300.5 167.5 290.5 294 300.5 307.5C310.5 321 415 335 415 335V321L401.5 266.5L386 220L362 193L336.5 177.5Z"
+                        fill="#CE8E2E" />
+                    <path
+                        d="M152 307.5V335C152 335 252.5 326 271.5 307.5C290.5 289 271.5 167.5 271.5 167.5L242.5 177.5L210 193L179 230.5L162 266.5L152 307.5Z"
+                        stroke="black" />
+                    <path
+                        d="M336.5 177.5L300.5 167.5C300.5 167.5 290.5 294 300.5 307.5C310.5 321 415 335 415 335V321L401.5 266.5L386 220L362 193L336.5 177.5Z"
+                        stroke="black" />
+                </g>
+                <ellipse id="left-eye" cx="241" cy="278.5" rx="26" ry="27.5" fill="black" />
+                <circle id="eye-ball" cx="233.5" cy="280.5" r="7.5" fill="white" />
+                <ellipse id="right-eye" cx="334.5" cy="276.5" rx="25.5" ry="27.5" fill="black" />
+                <circle id="eye-ball" cx="326.5" cy="280.5" r="7.5" fill="white" />
+            </g>
+        </svg>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

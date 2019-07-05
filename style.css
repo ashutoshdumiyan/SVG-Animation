@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body h1 {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(35, 98, 139);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(26, 118, 155);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#left-eye,
+#right-eye {
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.color-add #left-eye {
+    fill: #175282;
+}
+
+.color-add #right-eye {
+    fill: #175282;
+}
+
+.move-eyes #eye-ball {
+    animation: myAnim 2.5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+.move-ears #left-ear,
+.move-ears #left-inner-ear,
+.move-ears #right-ear,
+.move-ears #right-inner-ear {
+    transform-origin: 20% 40%;
+    animation: earAnim 2.5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@keyframes myAnim {
+    10% {
+        transform: translate(10px, 12px);
+    }
+
+    50% {
+        transform: translate(18px, 5px);
+    }
+
+    80% {
+        transform: translate(15px, 15px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes earAnim {
+    10% {
+        transform: rotateX(-45deg);
+    }
+
+    50% {
+        transform: rotateX(-10deg);
+    }
+
+    80% {
+        transform: rotateX(-50deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
